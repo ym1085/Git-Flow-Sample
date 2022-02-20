@@ -17,4 +17,10 @@ public class MemberController {
     public ResponseEntity<String> login() {
         return ResponseEntity.ok().body("로그인 완료");
     }
+
+    @GetMapping("/user/regist")
+    public ResponseEntity<String> regist() {
+        log.info("회원 가입 진행중 01");
+        return ResponseEntity.ok().body("회원가입 완료");
+    }
 }
