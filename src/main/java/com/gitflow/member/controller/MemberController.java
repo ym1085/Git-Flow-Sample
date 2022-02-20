@@ -15,6 +15,7 @@ public class MemberController {
 
     @GetMapping("/user")
     public ResponseEntity<String> login() {
+        log.info("bug fix ==> 로그인 기능 수정");
         return ResponseEntity.ok().body("로그인 완료");
     }
 
