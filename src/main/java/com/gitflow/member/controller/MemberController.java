@@ -21,6 +21,7 @@ public class MemberController {
     @GetMapping("/user/regist")
     public ResponseEntity<String> regist() {
         log.info("회원 가입 진행중 01");
+        log.info("회원 가입 완료 02");
         return ResponseEntity.ok().body("회원가입 완료");
     }
 }
