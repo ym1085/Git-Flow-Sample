@@ -25,4 +25,9 @@ public class MemberController {
         log.info("회원 가입 완료 02");
         return ResponseEntity.ok().body("회원가입 완료");
     }
+
+    @GetMapping("/user/test")
+    public void test() {
+        log.info("test");
+    }
 }
